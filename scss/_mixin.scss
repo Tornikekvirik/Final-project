@@ -1,0 +1,16 @@
+@mixin flex($justify,$align) {
+   display: flex;
+   justify-content: $justify;
+   align-items: $align;
+}
+
+@mixin max-sizes($max,$width,$margin){
+   max-width: $max;
+   width: $width;
+   margin: $margin;
+}
+
+@mixin sizes($width,$height:$width) {
+   width: $width;
+   height: $height;
+}

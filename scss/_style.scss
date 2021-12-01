@@ -1,0 +1,205 @@
+.header{
+    background-image: url(../images/bg-image.png);
+    width: 100%;
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .container{
+        @include flex(space-between,center);
+        @include max-sizes(1170px,100%,0 auto);
+
+        .logo{
+            width: 212.05px;
+            height: 146.19px;
+            margin-top: 30px;
+            
+        }
+        .nav-container{       
+            
+
+            nav{
+            
+
+                ul{
+                    display: flex;
+    
+                    li{
+                        margin-right: 40px;
+                        color: white;
+                        font-weight: bold;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+            }
+
+        }
+        .header-contact{
+            @include flex(space-around,center);
+            max-width: 300px;
+            width: 100%;
+            height: 100px;
+            background-color: #A80E0E;    
+        }
+        
+    }
+    .title{
+        height: 386px;
+        max-width: 788px;
+        margin-top: 250px;
+
+        h1{
+            font-family: 'Oswald', sans-serif;
+            font-size: 96px;
+            color: white;
+            text-align: center;
+        }
+        div{
+            max-width: 783px;
+            width: 100%;
+            height: 133;
+            background-image: url(../images/yellow.png);
+            background-repeat: no-repeat;
+            height: 170px;
+            @include flex(none,center);
+            margin-left: 60px;
+
+            div{
+                max-width: 400px;
+                width: 100%;
+                height: 80px;
+                margin-left: 60px;
+
+                h2{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 30px;
+                    color: white;
+                }
+
+            }
+
+            
+        }
+        button{
+            max-width: 255px;
+            width: 100%;
+            height: 68px;
+            border-radius: 90px;
+            background-color: #FFAA00;
+            border: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 200px;
+            margin-top: 60px;
+            cursor: pointer;
+
+            h2{
+                font-size: 27px;
+                font-family: 'Oswald', sans-serif;
+                color: #A80E0E;
+                // margin-right: 34px;
+
+            }
+        }
+    }
+    .arrow{
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        
+    }
+}
+
+// header end
+
+// section 1 start
+.section1{
+    padding-top: 150px;
+    padding-bottom: 170px;
+
+    .section-1-title{
+        max-width: 700px;
+        width: 100%;
+        height: 134px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2{
+            font-size: 50px;
+            color: #A80E0E;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 12px;
+        }
+        h4{
+            font-size: 20px;
+            color: #382E36;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 30px;
+
+        }
+    }
+    .assort{
+        padding-top: 150px;
+        @include max-sizes(1170px,100%,0 auto);
+        @include flex(space-between,center);
+
+        .menu{
+            max-width: 128px;
+            width: 100%;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            img{
+                margin-bottom: 35px;
+            }
+            h3{
+                font-size: 18px;
+                color: #000000;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+// Section 1 end
+
+// Section 2 start
+.section2{
+    background-color: #FFAA00;
+    height: 850px;
+
+    .courier{
+        display: flex;
+
+        img{
+            margin-top: 40px;
+        }
+        .redpaint{
+            @include max-sizes(460px,100%,none);
+            background-image: url(../images/Path4327.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 460px;
+            width: 100%;
+            height: 200px;
+            margin-top: 30%;
+            @include flex(space-between,center);
+
+            h2{
+                margin-left: 5px;
+                font-size: 70px;
+                color: white;
+                font-family: 'Oswald', sans-serif;
+            }
+        }
+    }
+
+    
+}
+
+// Section 2 end
