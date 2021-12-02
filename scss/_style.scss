@@ -8,6 +8,8 @@
     .container{
         @include flex(space-between,center);
         @include max-sizes(1170px,100%,0 auto);
+        padding-left: 30px;
+        padding-right: 30px;
 
         .logo{
             width: 212.05px;
@@ -39,7 +41,8 @@
             max-width: 300px;
             width: 100%;
             height: 100px;
-            background-color: #A80E0E;    
+            background-color: #A80E0E;
+                
         }
         
     }
@@ -143,6 +146,8 @@
         padding-top: 150px;
         @include max-sizes(1170px,100%,0 auto);
         @include flex(space-between,center);
+        padding-right: 15px;
+        padding-left: 15px;
 
         .menu{
             max-width: 128px;
@@ -164,6 +169,17 @@
 
             }
         }
+
+       
+    }
+    @media (max-width:850px){
+        .assort{
+            flex-direction: column;
+
+            .menu{
+                margin-bottom: 60px;
+            }
+        }
     }
 }
 // Section 1 end
@@ -171,10 +187,18 @@
 // Section 2 start
 .section2{
     background-color: #FFAA00;
-    height: 850px;
+    height: 745px;
 
     .courier{
         display: flex;
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        background-image: url(../images/courier.png);
+        height: 745px;
+        background-repeat: no-repeat;
+        background-position: right;
+        
 
         img{
             margin-top: 40px;
@@ -183,7 +207,7 @@
             @include max-sizes(460px,100%,none);
             background-image: url(../images/Path4327.png);
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: right;
             max-width: 460px;
             width: 100%;
             height: 200px;
@@ -195,6 +219,7 @@
                 font-size: 70px;
                 color: white;
                 font-family: 'Oswald', sans-serif;
+                
             }
         }
     }
@@ -203,3 +228,103 @@
 }
 
 // Section 2 end
+
+// Section 3 start
+
+.section3{
+    padding-top: 150px;
+
+    .wrapper{
+        @include max-sizes(650px,100%,0 auto);
+        text-align: center;
+
+        h2{
+            margin-bottom: 25px;
+            font-size: 40px;
+            color: #A80E0E;
+            font-family: 'Oswald', sans-serif;
+
+        }
+        img{
+            margin-bottom: 25px;
+        }
+        h3{
+            font-size: 20px;
+            color: #382E36;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    .recipes{
+        padding-top: 130px;
+        @include max-sizes(1170px,100%,0 auto);
+        @include flex(space-between,none);
+
+        .food{
+            @include max-sizes(360px,100%,none);
+            box-shadow: 0 15 15 #000000;
+            fill: #FFFFFF;
+           
+
+            img{
+                max-width: 360px;
+                width: 100%;
+            }
+            h2{
+                font-size: 16px;
+                color: #000000;
+                font-family:'Montserrat', sans-serif;
+                font-weight: bold;
+                margin-top: 30px;
+                margin-bottom: 16px;
+            }
+            .pseudo::before{
+                content: url(../images/star.svg);
+                margin-right: 10px;
+                margin-left: 15px;
+            }
+            h3{
+                font-size: 22px;
+                color: black;
+                font-family:'Montserrat', sans-serif;
+                font-weight: bold;
+                margin-bottom: 10px;
+                margin-left: 15px;
+            }
+            h4{
+                font-size: 13px;
+                color: #686868;
+                font-family:'Montserrat', sans-serif;
+                margin-left: 15px;
+                margin-bottom: 40px;
+            }
+            button{
+                @include max-sizes(164px,100%,none);
+                height: 40px;
+                background-color: #FFAA00;
+                margin-left: 15px;
+                @include flex(center,center);
+                border-radius: 90px;
+                border: none;
+                cursor: pointer;
+                color: white;
+                font-family:'Montserrat', sans-serif;
+
+                i{
+                    color: white;
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+
+            }
+            h5{
+                font-size: 22px;
+                color: #A80E0E;
+                margin-left: 15px;
+                font-family: 'Oswald', sans-serif;
+            }
+            
+        }
+    }
+}
+// Section 3 end
