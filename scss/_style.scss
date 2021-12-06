@@ -145,9 +145,10 @@
     .assort{
         padding-top: 150px;
         @include max-sizes(1170px,100%,0 auto);
-        @include flex(space-between,center);
+        @include flex(space-around,center);
         padding-right: 15px;
         padding-left: 15px;
+        
 
         .menu{
             max-width: 128px;
@@ -205,9 +206,6 @@
         }
         .redpaint{
             @include max-sizes(460px,100%,none);
-            background-image: url(../images/Path4327.png);
-            background-repeat: no-repeat;
-            background-position: right;
             max-width: 460px;
             width: 100%;
             height: 200px;
@@ -258,16 +256,14 @@
     .recipes{
         padding-top: 130px;
         @include max-sizes(1170px,100%,0 auto);
-        @include flex(space-between,none);
+        @include flex(space-around,none);
 
         .food{
-            @include max-sizes(360px,100%,none);
-            box-shadow: 0 15 15 #000000;
-            fill: #FFFFFF;
+            @include max-sizes(300px,100%,none);
            
 
             img{
-                max-width: 360px;
+                max-width: 300px;
                 width: 100%;
             }
             h2{
@@ -326,5 +322,138 @@
             
         }
     }
+    .button-2{
+        margin-top: 130px;
+        width: 255px;
+        height: 68px;
+        border-radius: 90px;
+        background-color: #A80E0E;
+        color: white;
+        font-family:'Montserrat', sans-serif;
+        border: none;
+        cursor: pointer;
+    }
 }
 // Section 3 end
+// Section 4 start
+.section-4{
+    background-image: url(../images/2663738.jpg);
+    height: 852px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    .timer{
+        max-width: 450px;
+        width: 100%;
+        height: 324px;
+        margin-left: 100px;
+        
+        h2{
+            font-size: 60px;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 20px;
+
+        }
+        h3{
+            font-size: 25px;
+            color: white;
+            font-family:'Montserrat', sans-serif;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-size: 22px;
+            color: white;
+            font-family:'Montserrat', sans-serif;
+            margin-bottom: 50px;
+        }
+        .box{
+            @include flex(center,center);
+            flex-direction: column;
+            width: 85px;
+            height: 85px;
+            background-color: #FFAA00;
+
+            h2{
+                font-size: 40px;
+                color: white;
+                align-items: center;
+                margin-top: 8px;
+
+            }
+            h3{
+                color: #A80E0E;
+            }
+            
+
+
+        }
+    }
+}
+
+// Section 4 end
+// Section 5 start
+.section-5{
+    padding-top: 150px;
+
+    .container-2{
+        @include flex(center,none);
+        @include max-sizes(700px,100%,0 auto);
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            font-size: 40px;
+            color: #A80E0E;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-size: 20px;
+            font-family:'Montserrat', sans-serif;
+            color: #382E36;
+            margin-top: 25px;
+        }
+    }
+    .container-3{
+        @include flex(none,center);
+        @include max-sizes(1170px,100%,0 auto);
+        padding-top: 130px;
+
+        .quotes{
+            
+            img{
+                margin-bottom: 60px;
+                
+            }
+            p{
+                margin-bottom: 60px;
+                font-size: 20px;
+                font-family:'Montserrat', sans-serif;
+                color: black;
+            }
+            h2{
+                margin-bottom: 10px;
+                margin-left: 50px;
+                font-size: 25px;
+                font-family:'Montserrat', sans-serif;
+                color: black;
+                font-weight: bold;
+            }
+            h3{
+                margin-bottom: 50px;
+                margin-left: 50px;
+                font-family:'Montserrat', sans-serif;
+                font-size: 16px;
+                color: #686868;
+            }
+            .paragraph-wrapper{
+                max-width: 350px;
+                width: 100%;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+// Section 5 end
