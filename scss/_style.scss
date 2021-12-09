@@ -477,17 +477,15 @@
             background-color: white;
             text-align: center;
             border-radius: 10px;
-
-            img{
-                margin-top: 35px;
-                margin-bottom: 15px;
-            }
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
 
             h2{
                 font-size: 20px;
                 color: black;
                 font-family:'Montserrat', sans-serif;
-                margin-bottom: 20px;
             }
             div{
 
@@ -496,7 +494,6 @@
                 background-color: #FFAA00;
                 margin: 0 auto;
                 border-radius: 90px;
-                margin-bottom: 18px;
 
             }
             h3{
@@ -510,3 +507,66 @@
     }
 }
 // Section 6 end
+// Section 7 start
+.section7{
+    background-color: #A80E0E;
+
+    .container7{
+        @include max-sizes(1170px,100%,0 auto);
+        display: flex;
+
+        .contact{
+            @include max-sizes(580px,100%,none);
+            height: 600px;
+            background-color: #A80E0E;
+            @include flex(center,center);
+
+            .contact-wrapper{
+                max-width: 370px;
+                width: 100%;
+                height: 400px;
+                @include flex(space-between,none);
+                flex-direction: column;
+
+                .button3{
+
+                    width: 120px;
+                    height: 41px;
+                    background-color: #FFAA00;
+                    color: white;
+                    font-size: 16px;
+                    font-family:'Montserrat', sans-serif;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 60px;
+
+                }
+                h2{
+                    font-size: 40px;
+                    font-family: 'Oswald', sans-serif;
+                    color: white;
+
+                }
+                h3{
+                    margin-left: 25px;
+                    font-size: 16px;
+                    color: white;
+                    font-family:'Montserrat', sans-serif;
+                    margin-bottom: 7px;
+
+
+                }
+                i{
+                    font-size: 50px;
+                    color: white;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .map{
+            @include flex(center,center);
+        }
+    }
+}
+
+// Section 7 end

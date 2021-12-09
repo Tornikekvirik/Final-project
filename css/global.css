@@ -641,18 +641,24 @@ a {
   background-color: white;
   text-align: center;
   border-radius: 10px;
-}
-
-.section6 .box .card img {
-  margin-top: 35px;
-  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section6 .box .card h2 {
   font-size: 20px;
   color: black;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
 }
 
 .section6 .box .card div {
@@ -661,7 +667,6 @@ a {
   background-color: #FFAA00;
   margin: 0 auto;
   border-radius: 90px;
-  margin-bottom: 18px;
 }
 
 .section6 .box .card h3 {
@@ -669,5 +674,98 @@ a {
   color: #686868;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 50px;
+}
+
+.section7 {
+  background-color: #A80E0E;
+}
+
+.section7 .container7 {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section7 .container7 .contact {
+  max-width: 580px;
+  width: 100%;
+  margin: none;
+  height: 600px;
+  background-color: #A80E0E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section7 .container7 .contact .contact-wrapper {
+  max-width: 370px;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section7 .container7 .contact .contact-wrapper .button3 {
+  width: 120px;
+  height: 41px;
+  background-color: #FFAA00;
+  color: white;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+.section7 .container7 .contact .contact-wrapper h2 {
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.section7 .container7 .contact .contact-wrapper h3 {
+  margin-left: 25px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 7px;
+}
+
+.section7 .container7 .contact .contact-wrapper i {
+  font-size: 50px;
+  color: white;
+  margin-right: 10px;
+}
+
+.section7 .container7 .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=global.css.map */
