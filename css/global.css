@@ -111,6 +111,18 @@ a {
   background-color: #A80E0E;
 }
 
+@media (max-width: 1083px) {
+  .header .container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .container ul li {
+    display: none;
+  }
+}
+
 .header .title {
   height: 386px;
   max-width: 788px;
@@ -281,18 +293,23 @@ a {
   height: 745px;
 }
 
-.section2 .video {
-  position: absolute;
-  text-align: center;
-  left: 50px;
+.section2 .container-2 {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.section2 video {
+.section2 .container-2 .video {
+  position: absolute;
+  text-align: center;
+}
+
+.section2 .container-2 video {
   max-width: 1170px;
   width: 100%;
 }
 
-.section2 .redpaint {
+.section2 .container-2 .redpaint {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,16 +323,21 @@ a {
   max-width: 1170px;
   width: 100%;
   text-align: center;
-  left: 50px;
 }
 
-.section2 .redpaint h2 {
+.section2 .container-2 .redpaint h2 {
   font-size: 100px;
   color: #A80E0E;
   letter-spacing: 15px;
   line-height: 100px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  .section2 .redpaint h2 {
+    font-size: 50px;
+  }
 }
 
 .section3 {
@@ -362,7 +384,7 @@ a {
 }
 
 .section3 .recipes .food {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
   margin: none;
 }
@@ -438,6 +460,21 @@ a {
   color: #A80E0E;
   margin-left: 15px;
   font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 800px) {
+  .section3 .recipes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section3 .recipes .food:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .section3 .button-2 {
@@ -609,6 +646,18 @@ a {
   margin-left: 50px;
 }
 
+@media (max-width: 1088px) {
+  .section-5 .container-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-5 .container-3 .quotes {
+    padding-top: 30px;
+  }
+}
+
 .section6 {
   background-color: #FFAA00;
   height: 650px;
@@ -772,5 +821,98 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer {
+  padding-top: 100px;
+}
+
+footer .footer-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+footer .footer-wrapper img {
+  margin-bottom: 33px;
+}
+
+footer .footer-wrapper .footer-p {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 11px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+}
+
+footer .footer-wrapper .tax img:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer .footer-wrapper .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+footer .footer-wrapper .footer-line {
+  background-color: #FFAA00;
+  width: 50px;
+  height: 3px;
+  border-radius: 60px;
+  margin-bottom: 46px;
+  margin-top: 20px;
+}
+
+footer .footer-wrapper li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #686868;
+}
+
+footer .footer-wrapper h2 {
+  font-size: 20px;
+  color: #A80E0E;
+  font-family: 'Oswald', sans-serif;
+}
+
+footer .footer-wrapper .footer-photos img:not(:last-child) {
+  margin-right: 15px;
+}
+
+footer .underline {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  height: 2px;
+  opacity: 20%;
+  background-color: #707070;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+footer h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #686868;
+  text-align: center;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=global.css.map */

@@ -10,7 +10,7 @@
         @include max-sizes(1170px,100%,0 auto);
         padding-left: 30px;
         padding-right: 30px;
-
+        
         .logo{
             width: 212.05px;
             height: 146.19px;
@@ -36,13 +36,25 @@
             }
 
         }
+        
         .header-contact{
             @include flex(space-around,center);
             max-width: 300px;
             width: 100%;
             height: 100px;
             background-color: #A80E0E;
+            
                 
+        }
+
+        @media (max-width:1083px){
+            ul{
+                flex-direction: column;
+
+                li{
+                    display: none;
+                }
+            }
         }
         
     }
@@ -188,18 +200,21 @@
 // Section 2 start
 .section2{
     height: 745px;
-
+    .container-2{
+        @include max-sizes(1170px,100%,0 auto);
 
         .video{
             position: absolute;
             text-align: center;
-            left: 50px;
+            
+            
 
         }
 
         video{
             max-width: 1170px;
             width: 100%;
+            
         }
         .redpaint{
             position: relative;
@@ -210,7 +225,7 @@
             max-width: 1170px;
             width: 100%;
             text-align: center;
-            left: 50px;
+            
             
             
 
@@ -224,6 +239,15 @@
 
             }
         }
+    }
+    @media (max-width:850px){
+        .redpaint{
+
+            h2{
+                font-size: 50px;
+            }
+        }
+    }
     
 }
 
@@ -262,7 +286,7 @@
         
 
         .food{
-            @include max-sizes(300px,100%,none);
+            @include max-sizes(250px,100%,none);
            
 
             img{
@@ -323,6 +347,16 @@
                 font-family: 'Oswald', sans-serif;
             }
             
+        }
+    }
+    @media(max-width:800px){
+        .recipes{
+            flex-direction: column;
+            align-items: center;
+
+            .food:not(:last-child){
+                margin-bottom: 40px;
+            }
         }
     }
     .button-2{
@@ -460,6 +494,15 @@
             }
         }
     }
+    @media (max-width:1088px){
+        .container-3{
+            flex-direction: column;
+
+            .quotes{
+                padding-top: 30px;
+            }
+        }
+    }
 }
 // Section 5 end
 // Section 6 start
@@ -577,3 +620,80 @@
 }
 
 // Section 7 end
+// Footer start
+footer{
+    padding-top: 100px;
+
+    .footer-wrapper{
+        @include max-sizes(1170px,100%,0 auto);
+        @include flex(space-between,none);
+
+        img{
+            margin-bottom: 33px;
+        }
+
+        .footer-p{
+            max-width: 300px;
+            width: 100%;
+            margin-bottom: 11px;
+            font-size: 16px;
+            font-family:'Montserrat', sans-serif;
+            color: #000000;
+
+        }
+        .tax{
+            img:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+
+        .footer-navigation{
+            @include flex(none,none);
+
+        }
+        .footer-line{
+            background-color: #FFAA00;
+            width: 50px;
+            height: 3px;
+            border-radius: 60px;
+            margin-bottom: 46px;
+            margin-top: 20px;
+        }
+        li{
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-family:'Montserrat', sans-serif;
+            color: #686868;
+
+        }
+        h2{
+            font-size: 20px;
+            color: #A80E0E;
+            font-family: 'Oswald', sans-serif;
+
+        }
+        .footer-photos{
+            img:not(:last-child){
+                margin-right: 15px;
+            }
+        }
+
+    }
+    .underline{
+        @include max-sizes(1170px,100%,0 auto);
+        height: 2px;
+        opacity: 20%;
+        background-color: #707070;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    h5{
+        font-family:'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #686868;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+// Footer end
